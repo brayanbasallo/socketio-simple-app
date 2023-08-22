@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>socket.io simple chat</title>
+    <script src="scripts/ui.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="grid grid-cols-4 p-8 gap-8 min-h-screen">
+        <div class="">
+            <div class="mb-6">
+                <h1 class="font-bold text-2xl">Socket.io simple chat</h1>
+                <a href="https://github.com/brayanbasallo" class="text-sm text-gray-500 underline">by Brayan Basallo Soto</a>
+            </div>
+            <div class="bg-indigo-50 p-3 text-center rounded-md mb-6">
+                <div class="">
+                    <img class="w-20 m-auto rounded-full" src="https://media.istockphoto.com/id/1191411980/vector/blue-cute-robot.jpg?s=612x612&w=0&k=20&c=gYPQin21qVIgQ2vmCrSgBiUswlk233CYORcfBa_Qe4g=" alt="robot profile">
+                </div>
+                <h1 class="font-bold text-xl" id="UserName">Username </h1>
+                <p class="text-sm text-gray-500">status</p>
+            </div>
+            <div class="">
+                <div class="flex justify-between mb-3">
+                    <h2 class="text-base font-bold ">
+                        Active users
+                    </h2>
+                    <span class="bg-indigo-50 w-6 h-6 flex justify-center items-center rounded-md">
+                        1
+                    </span>
+                </div>
+                <div class="flex flex-col gap-3 inbox__people">
+                </div>
+            </div>
+        </div>
+        <main 
+        class="col-span-2 bg-indigo-50 rounded-md flex flex-col justify-between px-3 py-4"
+        >
+            <div class="messages__history flex flex-col gap-2">
+            </div>
+            <div class="bg-white px-2 py-2 rounded">
+                <form class="message_form flex gap-3">
+                    <input type="text" class="w-full border rounded px-2 message_form__input" placeholder="Write your message">
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded flex gap-1 items-center">
+                        Send
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        class="w-4 h-4">
+                        <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" 
+                        />
+                        </svg>
+                    </button>
+            </form>
+            </div>
+        </main>
+        <div class="">
+            <p class="mb-3">
+                this simple project is to practice developing with tailwindcss and socket.io
+            </p>
+            <div class="mb-3">
+                <h3 class="font-bold text-xl mb-1">Features</h3>
+                <ul class="list-disc list-inside">
+                    <li>Real time chat</li>
+                    <li>Real time active users</li>
+                    <li>Real time typing</li>
+                </ul>
+            </div>
+            <div class="mb-3">
+                <h3 class="font-bold text-xl mb-1">Technologies</h3>
+                <ul class="list-disc list-inside">
+                    <li>Nodejs</li>
+                    <li>Express</li>
+                    <li>Socket.io</li>
+                    <li>Tailwindcss</li>
+                </ul>
+            </div>
+            <div class="bg-indigo-50 p-3 text-center rounded-md mb-6">
+
+                <div class="rounded-full">
+                    <img class="w-20 m-auto rounded-full" src="https://unavatar.io/github/brayanbasallo" alt="github profile">
+                </div>
+                <h1 class="font-bold text-xl">Brayan Basallo Soto </h1>
+                <a href="https://basallosoto.vercel.app/" class="text-sm text-blue-700 underline">
+                    about me
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
