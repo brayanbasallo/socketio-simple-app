@@ -12,11 +12,10 @@
         <div class="">
             <div class="mb-6">
                 <h1 class="font-bold text-2xl">Socket.io simple chat</h1>
-                <a href="https://github.com/brayanbasallo" class="text-sm text-gray-500 underline">by Brayan Basallo Soto</a>
             </div>
             <div class="bg-indigo-50 p-3 text-center rounded-md mb-6">
                 <div class="">
-                    <img class="w-20 m-auto rounded-full" src="https://media.istockphoto.com/id/1191411980/vector/blue-cute-robot.jpg?s=612x612&w=0&k=20&c=gYPQin21qVIgQ2vmCrSgBiUswlk233CYORcfBa_Qe4g=" alt="robot profile">
+                    <img class="w-20 m-auto rounded-full" src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="robot profile">
                 </div>
                 <h1 class="font-bold text-xl" id="UserName">Username </h1>
                 <p class="text-sm text-gray-500">status</p>
@@ -35,9 +34,9 @@
             </div>
         </div>
         <main 
-        class="col-span-2 bg-indigo-50 rounded-md flex flex-col justify-between px-3 py-4"
+        class="col-span-3 bg-indigo-50 rounded-md flex flex-col justify-between px-3 py-4"
         >
-            <div class="messages__history flex flex-col gap-2">
+            <div class="messages__history flex flex-col gap-2 max-h-[80vh] overflow-y-auto">
             </div>
             <div class="bg-white px-2 py-2 rounded">
                 <form class="message_form flex gap-3">
@@ -61,7 +60,7 @@
             </form>
             </div>
         </main>
-        <div class="">
+        <div class="hidden">
             <p class="mb-3">
                 this simple project is to practice developing with tailwindcss and socket.io
             </p>
